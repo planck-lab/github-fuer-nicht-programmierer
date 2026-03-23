@@ -79,6 +79,29 @@ footer {
   text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem;
   border-top: 1px solid var(--border); max-width: 720px; margin: 2rem auto 0;
 }
+/* Focus styles for keyboard navigation */
+a:focus-visible, button:focus-visible, .btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+/* Skip link */
+.skip-link {
+  position: absolute; top: -100px; left: 1rem; z-index: 200;
+  background: var(--accent); color: var(--bg); padding: 0.5rem 1rem;
+  border-radius: 0 0 8px 8px; font-weight: 700; text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+/* Progress bar (behavioral) */
+.progress-bar {
+  position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 99;
+  background: var(--border);
+}
+.progress-fill {
+  height: 100%; background: var(--accent); transition: width 0.3s;
+  border-radius: 0 2px 2px 0;
+}
 @media (max-width: 600px) {
   .container { padding: 4rem 1.25rem 1.5rem; }
   h1 { font-size: 1.6rem; }

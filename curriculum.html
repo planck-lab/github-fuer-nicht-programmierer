@@ -36,13 +36,14 @@
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
 
-<div class="lang-switch">
+<div class="lang-switch" role="navigation" aria-label="Language">
   <button class="lang-btn active" onclick="setLang('de')">DE</button>
   <button class="lang-btn" onclick="setLang('en')">EN</button>
 </div>
 
-<div class="container">
+<main id="main-content" class="container">
 <a href="index.html" class="back-link"><span class="de">← Startseite</span><span class="en">← Home</span></a>
 
 <h1><span class="de">Die Lernreise</span><span class="en">The Learning Path</span></h1>
@@ -119,9 +120,9 @@
   </a>
 </div>
 
-</div>
+</main>
 
-<footer>
+<footer role="contentinfo">
   <a href="index.html"><span class="de">← Startseite</span><span class="en">← Home</span></a>
   ·
   <a href="https://github.com/planck-lab/github-fuer-nicht-programmierer">

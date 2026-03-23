@@ -8,11 +8,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="lang-switch">
+<a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
+<div class="progress-bar" role="progressbar" aria-valuenow="4" aria-valuemin="1" aria-valuemax="6" aria-label="Modul 4 von 6"><div class="progress-fill" style="width:67%"></div></div>
+<div class="lang-switch" role="navigation" aria-label="Language">
   <button class="lang-btn active" onclick="setLang('de')">DE</button>
   <button class="lang-btn" onclick="setLang('en')">EN</button>
 </div>
-<div class="container">
+<main id="main-content" class="container">
 <a href="curriculum.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
 
 <h1><span class="de">Modul 4: Feedback ohne E-Mail-Ping-Pong</span><span class="en">Module 4: Feedback without email ping-pong</span></h1>
@@ -41,7 +43,7 @@
     <li><span class="de">Klicke <strong>„Create branch: entwurf-projektplan from main"</strong></span><span class="en">Click <strong>"Create branch: draft-project-plan from main"</strong></span></li>
   </ol>
   <div class="tip"><span class="de">💡 Du bist jetzt auf dem neuen Branch. Alles was du hier änderst, bleibt getrennt vom Original (main).</span><span class="en">💡 You're now on the new branch. Everything you change here stays separate from the original (main).</span></div>
-  <div class="checkpoint"><span class="de">✅ Dein Branch ist erstellt. Das Dropdown zeigt jetzt „entwurf-projektplan".</span><span class="en">✅ Your branch is created. The dropdown now shows "draft-project-plan".</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Dein Branch ist erstellt. Das Dropdown zeigt jetzt „entwurf-projektplan".</span><span class="en">✅ Your branch is created. The dropdown now shows "draft-project-plan".</span></div>
 </div>
 
 <div class="step">
@@ -52,7 +54,7 @@
     <li><span class="de">Füge einen neuen Abschnitt hinzu: <code>## Nächste Schritte</code> mit 3 Punkten</span><span class="en">Add a new section: <code>## Next Steps</code> with 3 bullet points</span></li>
     <li><span class="de">Committe: <code>Nächste Schritte ergänzt (Entwurf)</code></span><span class="en">Commit: <code>Added next steps (draft)</code></span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Änderung ist auf dem Branch gespeichert. Main ist unverändert.</span><span class="en">✅ Change is saved on the branch. Main is untouched.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Änderung ist auf dem Branch gespeichert. Main ist unverändert.</span><span class="en">✅ Change is saved on the branch. Main is untouched.</span></div>
 </div>
 
 <div class="step">
@@ -63,7 +65,7 @@
     <li><span class="de">Beschreibung: Erkläre kurz was du geändert hast und warum</span><span class="en">Description: Briefly explain what you changed and why</span></li>
     <li><span class="de">Klicke <strong>„Create pull request"</strong></span><span class="en">Click <strong>"Create pull request"</strong></span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Dein Pull Request ist offen! Du siehst die Diff-Ansicht deiner Änderungen.</span><span class="en">✅ Your pull request is open! You see the diff view of your changes.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Dein Pull Request ist offen! Du siehst die Diff-Ansicht deiner Änderungen.</span><span class="en">✅ Your pull request is open! You see the diff view of your changes.</span></div>
 </div>
 
 <div class="step">
@@ -75,7 +77,7 @@
     <li><span class="de">Klicke <strong>„Add single comment"</strong></span><span class="en">Click <strong>"Add single comment"</strong></span></li>
   </ol>
   <div class="tip"><span class="de">💡 Das ist der Killer-Feature: Feedback direkt an der Stelle im Dokument, nicht in einer separaten E-Mail. Stell dir das vor für Verträge, Policies, Marketingtexte…</span><span class="en">💡 This is the killer feature: feedback right where it matters in the document, not in a separate email. Imagine this for contracts, policies, marketing copy…</span></div>
-  <div class="checkpoint"><span class="de">✅ Dein Kommentar ist sichtbar — direkt neben der betroffenen Zeile.</span><span class="en">✅ Your comment is visible — right next to the affected line.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Dein Kommentar ist sichtbar — direkt neben der betroffenen Zeile.</span><span class="en">✅ Your comment is visible — right next to the affected line.</span></div>
 </div>
 
 <div class="step">
@@ -85,7 +87,7 @@
     <li><span class="de">Klicke <strong>„Merge pull request"</strong> → <strong>„Confirm merge"</strong></span><span class="en">Click <strong>"Merge pull request"</strong> → <strong>"Confirm merge"</strong></span></li>
     <li><span class="de">Optional: Lösche den Branch (<strong>„Delete branch"</strong>)</span><span class="en">Optional: Delete the branch (<strong>"Delete branch"</strong>)</span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Deine Änderungen sind jetzt in main. Der Review-Prozess ist dokumentiert.</span><span class="en">✅ Your changes are now in main. The review process is documented.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Deine Änderungen sind jetzt in main. Der Review-Prozess ist dokumentiert.</span><span class="en">✅ Your changes are now in main. The review process is documented.</span></div>
 </div>
 
 <div class="celebration">
@@ -101,12 +103,12 @@
   <dt>Review</dt><dd><span class="de">Kommentare und Feedback direkt an den geänderten Zeilen.</span><span class="en">Comments and feedback directly on the changed lines.</span></dd>
 </dl></div>
 
-<div class="nav-footer">
+<nav class="nav-footer" aria-label="Module navigation">
   <a href="modul3.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 3</span><span class="en">← Module 3</span></a>
   <a href="modul5.html" class="btn"><span class="de">Modul 5 →</span><span class="en">Module 5 →</span></a>
-</div>
-</div>
-<footer><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
+</nav>
+</main>
+<footer role="contentinfo"><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);

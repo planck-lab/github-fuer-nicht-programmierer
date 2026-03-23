@@ -8,11 +8,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="lang-switch">
+<a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
+<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="1" aria-valuemax="6" aria-label="Modul 2 von 6"><div class="progress-fill" style="width:33%"></div></div>
+<div class="lang-switch" role="navigation" aria-label="Language">
   <button class="lang-btn active" onclick="setLang('de')">DE</button>
   <button class="lang-btn" onclick="setLang('en')">EN</button>
 </div>
-<div class="container">
+<main id="main-content" class="container">
 <a href="curriculum.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
 
 <h1><span class="de">Modul 2: Schluss mit v3_final_FINAL</span><span class="en">Module 2: No more v3_final_FINAL</span></h1>
@@ -46,7 +48,7 @@
     <li><span class="de">Ergänze unter „Über mich" eine neue Zeile: <code>Dieses Repo wird aktiv gepflegt.</code></span><span class="en">Add a new line under "About me": <code>This repo is actively maintained.</code></span></li>
     <li><span class="de">Klicke <strong>„Commit changes..."</strong></span><span class="en">Click <strong>"Commit changes..."</strong></span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Du hast deine erste Datei im Browser bearbeitet.</span><span class="en">✅ You edited your first file in the browser.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Du hast deine erste Datei im Browser bearbeitet.</span><span class="en">✅ You edited your first file in the browser.</span></div>
 </div>
 
 <div class="step">
@@ -69,7 +71,7 @@
     <li><span class="de">Bearbeite die Datei nochmal und committe: <code>Erste Projektideen ergänzt</code></span><span class="en">Edit the file again and commit: <code>Added first project ideas</code></span></li>
     <li><span class="de">Bearbeite README.md erneut und committe: <code>Link zu Notizen ergänzt</code></span><span class="en">Edit README.md again and commit: <code>Added link to notes</code></span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Du hast jetzt 5+ Commits. Dein Logbuch füllt sich!</span><span class="en">✅ You now have 5+ commits. Your logbook is filling up!</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Du hast jetzt 5+ Commits. Dein Logbuch füllt sich!</span><span class="en">✅ You now have 5+ commits. Your logbook is filling up!</span></div>
 </div>
 
 <div class="step">
@@ -84,7 +86,7 @@
     <li><span class="de">🔴 <strong>Rote Zeilen</strong> = entfernt</span><span class="en">🔴 <strong>Red lines</strong> = removed</span></li>
     <li><span class="de">⬜ <strong>Weiße/graue Zeilen</strong> = unverändert (Kontext)</span><span class="en">⬜ <strong>White/gray lines</strong> = unchanged (context)</span></li>
   </ul>
-  <div class="checkpoint"><span class="de">✅ Du kannst jetzt jede Änderung Zeile für Zeile nachvollziehen.</span><span class="en">✅ You can now trace every change line by line.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Du kannst jetzt jede Änderung Zeile für Zeile nachvollziehen.</span><span class="en">✅ You can now trace every change line by line.</span></div>
 </div>
 
 <div class="step">
@@ -96,7 +98,7 @@
     <li><span class="de">Gehe zurück zum aktuellen Stand, bearbeite die Datei, füge den alten Inhalt ein</span><span class="en">Go back to current state, edit the file, paste the old content</span></li>
     <li><span class="de">Committe: <code>README auf Version vom 23.03. zurückgesetzt</code></span><span class="en">Commit: <code>Reverted README to March 23 version</code></span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Du hast eine alte Version wiederhergestellt. Zeitreise!</span><span class="en">✅ You restored an old version. Time travel!</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Du hast eine alte Version wiederhergestellt. Zeitreise!</span><span class="en">✅ You restored an old version. Time travel!</span></div>
 </div>
 
 <div class="celebration">
@@ -111,12 +113,12 @@
   <dt>Revert</dt><dd><span class="de">Eine Änderung rückgängig machen, indem man den alten Zustand wiederherstellt.</span><span class="en">Undoing a change by restoring the previous state.</span></dd>
 </dl></div>
 
-<div class="nav-footer">
+<nav class="nav-footer" aria-label="Module navigation">
   <a href="modul1.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 1</span><span class="en">← Module 1</span></a>
   <a href="modul3.html" class="btn"><span class="de">Modul 3 →</span><span class="en">Module 3 →</span></a>
-</div>
-</div>
-<footer><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
+</nav>
+</main>
+<footer role="contentinfo"><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);

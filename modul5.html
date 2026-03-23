@@ -8,11 +8,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="lang-switch">
+<a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
+<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="1" aria-valuemax="6" aria-label="Modul 5 von 6"><div class="progress-fill" style="width:83%"></div></div>
+<div class="lang-switch" role="navigation" aria-label="Language">
   <button class="lang-btn active" onclick="setLang('de')">DE</button>
   <button class="lang-btn" onclick="setLang('en')">EN</button>
 </div>
-<div class="container">
+<main id="main-content" class="container">
 <a href="curriculum.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
 
 <h1><span class="de">Modul 5: In 10 Minuten live</span><span class="en">Module 5: Live in 10 minutes</span></h1>
@@ -42,7 +44,7 @@
     <li><span class="de">✅ <strong>Add a README file</strong></span><span class="en">✅ <strong>Add a README file</strong></span></li>
     <li><span class="de"><strong>„Create repository"</strong></span><span class="en"><strong>"Create repository"</strong></span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Neues Repo ist da.</span><span class="en">✅ New repo is ready.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Neues Repo ist da.</span><span class="en">✅ New repo is ready.</span></div>
 </div>
 
 <div class="step">
@@ -68,7 +70,7 @@ Ich bin [Name] und arbeite als [Beruf].
   <ol start="4">
     <li><span class="de">Committe: <code>Startseite erstellt</code></span><span class="en">Commit: <code>Created homepage</code></span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Deine index.md ist da — die wird zur Startseite.</span><span class="en">✅ Your index.md is there — it becomes the homepage.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Deine index.md ist da — die wird zur Startseite.</span><span class="en">✅ Your index.md is there — it becomes the homepage.</span></div>
 </div>
 
 <div class="step">
@@ -81,7 +83,7 @@ Ich bin [Name] und arbeite als [Beruf].
     <li><span class="de">Klicke <strong>Save</strong></span><span class="en">Click <strong>Save</strong></span></li>
   </ol>
   <div class="tip"><span class="de">💡 Warte 1-2 Minuten. GitHub baut deine Seite im Hintergrund.</span><span class="en">💡 Wait 1-2 minutes. GitHub builds your site in the background.</span></div>
-  <div class="checkpoint"><span class="de">✅ Oben erscheint die URL: <code>dein-username.github.io/meine-seite</code></span><span class="en">✅ The URL appears above: <code>your-username.github.io/my-site</code></span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Oben erscheint die URL: <code>dein-username.github.io/meine-seite</code></span><span class="en">✅ The URL appears above: <code>your-username.github.io/my-site</code></span></div>
 </div>
 
 <div class="step">
@@ -92,7 +94,7 @@ Ich bin [Name] und arbeite als [Beruf].
     <li><span class="de">Committe — nach 1-2 Min sieht deine Seite professionell aus</span><span class="en">Commit — after 1-2 min your site looks professional</span></li>
   </ol>
   <div class="tip"><span class="de">💡 Andere Themes: <code>minimal</code>, <code>slate</code>, <code>dinky</code>, <code>tactile</code>. Einfach den Namen austauschen.</span><span class="en">💡 Other themes: <code>minimal</code>, <code>slate</code>, <code>dinky</code>, <code>tactile</code>. Just swap the name.</span></div>
-  <div class="checkpoint"><span class="de">✅ Deine Seite hat ein professionelles Design!</span><span class="en">✅ Your site has a professional design!</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Deine Seite hat ein professionelles Design!</span><span class="en">✅ Your site has a professional design!</span></div>
 </div>
 
 <div class="step">
@@ -102,7 +104,7 @@ Ich bin [Name] und arbeite als [Beruf].
     <li><span class="de">Das ist deine Website. Live. Kostenlos. Für immer.</span><span class="en">That's your website. Live. Free. Forever.</span></li>
     <li><span class="de">Teile den Link — per LinkedIn, E-Mail, Slack, wo auch immer</span><span class="en">Share the link — via LinkedIn, email, Slack, wherever</span></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Du hast eine eigene Website. Ohne Hosting-Anbieter, ohne Kosten, ohne Code.</span><span class="en">✅ You have your own website. No hosting provider, no costs, no code.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Du hast eine eigene Website. Ohne Hosting-Anbieter, ohne Kosten, ohne Code.</span><span class="en">✅ You have your own website. No hosting provider, no costs, no code.</span></div>
 </div>
 
 <div class="celebration">
@@ -123,12 +125,12 @@ Ich bin [Name] und arbeite als [Beruf].
 </table>
 </div>
 
-<div class="nav-footer">
+<nav class="nav-footer" aria-label="Module navigation">
   <a href="modul4.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 4</span><span class="en">← Module 4</span></a>
   <a href="modul6.html" class="btn"><span class="de">Modul 6 →</span><span class="en">Module 6 →</span></a>
-</div>
-</div>
-<footer><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
+</nav>
+</main>
+<footer role="contentinfo"><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);

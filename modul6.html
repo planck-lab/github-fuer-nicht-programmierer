@@ -29,11 +29,13 @@
 </style>
 </head>
 <body>
-<div class="lang-switch">
+<a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
+<div class="progress-bar" role="progressbar" aria-valuenow="6" aria-valuemin="1" aria-valuemax="6" aria-label="Modul 6 von 6"><div class="progress-fill" style="width:100%"></div></div>
+<div class="lang-switch" role="navigation" aria-label="Language">
   <button class="lang-btn active" onclick="setLang('de')">DE</button>
   <button class="lang-btn" onclick="setLang('en')">EN</button>
 </div>
-<div class="container">
+<main id="main-content" class="container">
 <a href="curriculum.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
 
 <h1><span class="de">Modul 6: Dein GitHub-Gameplan</span><span class="en">Module 6: Your GitHub Gameplan</span></h1>
@@ -98,7 +100,7 @@
 <div class="step">
   <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Deinen Anwendungsfall wählen</span><span class="en">Choose your use case</span></div></div>
   <p><span class="de">Denke an deinen Alltag: Wo hast du ein Versionsproblem? Wo geht Feedback verloren? Wo arbeiten mehrere Leute am gleichen Material? <strong>Das ist dein Anwendungsfall.</strong></span><span class="en">Think about your daily work: Where do you have a versioning problem? Where does feedback get lost? Where do multiple people work on the same material? <strong>That's your use case.</strong></span></p>
-  <div class="checkpoint"><span class="de">✅ Du hast einen konkreten Anwendungsfall im Kopf.</span><span class="en">✅ You have a concrete use case in mind.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Du hast einen konkreten Anwendungsfall im Kopf.</span><span class="en">✅ You have a concrete use case in mind.</span></div>
 </div>
 
 <div class="step">
@@ -123,7 +125,7 @@
 
 ## Team
 - [Wer ist beteiligt?]</div>
-  <div class="checkpoint"><span class="de">✅ Dein Business-Case-Repo steht.</span><span class="en">✅ Your business case repo is ready.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Dein Business-Case-Repo steht.</span><span class="en">✅ Your business case repo is ready.</span></div>
 </div>
 
 <div class="step">
@@ -134,7 +136,7 @@
     <li><code><span class="de">Team einladen und Rollen klären</span><span class="en">Invite team and clarify roles</span></code></li>
     <li><code><span class="de">Ersten Review-Zyklus durchführen (Pull Request)</span><span class="en">Run first review cycle (Pull Request)</span></code></li>
   </ol>
-  <div class="checkpoint"><span class="de">✅ Dein Projekt hat einen Startplan.</span><span class="en">✅ Your project has a starting plan.</span></div>
+  <div class="checkpoint" role="status"><span class="de">✅ Dein Projekt hat einen Startplan.</span><span class="en">✅ Your project has a starting plan.</span></div>
 </div>
 
 <h2><span class="de">🗣️ Wie überzeugt man Kollegen?</span><span class="en">🗣️ How to convince colleagues?</span></h2>
@@ -195,12 +197,12 @@
   <dt>Markdown</dt><dd><span class="de">Einfaches Textformat mit Struktur (# Überschrift, **fett**, - Liste).</span><span class="en">Simple text format with structure (# heading, **bold**, - list).</span></dd>
 </dl></div>
 
-<div class="nav-footer">
+<nav class="nav-footer" aria-label="Module navigation">
   <a href="modul5.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 5</span><span class="en">← Module 5</span></a>
   <a href="curriculum.html" class="btn"><span class="de">Modulübersicht →</span><span class="en">To overview →</span></a>
-</div>
-</div>
-<footer><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
+</nav>
+</main>
+<footer role="contentinfo"><a href="curriculum.html"><span class="de">← Modulübersicht</span><span class="en">← Overview</span></a></footer>
 <script>
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
