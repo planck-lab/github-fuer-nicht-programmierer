@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul 2 — Schluss mit v3_final_FINAL</title>
+<meta name="description" content="Lerne Dateien zu versionieren, Änderungen nachzuvollziehen und alte Versionen wiederherzustellen — ohne Code.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="setLang('de')">DE</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
+<div class="container">
+<a href="index.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
+
+<h1><span class="de">Modul 2: Schluss mit v3_final_FINAL</span><span class="en">Module 2: No more v3_final_FINAL</span></h1>
+<p class="subtitle"><span class="de">Dateien ändern, Commits verstehen, alte Versionen wiederherstellen.</span><span class="en">Edit files, understand commits, restore old versions.</span></p>
+
+<div class="tip">
+  <span class="de">💡 Voraussetzung: Du hast ein Repository aus Modul 1. Falls nicht, <a href="challenge.html">erstelle zuerst eins</a>.</span>
+  <span class="en">💡 Prerequisite: You have a repository from Module 1. If not, <a href="challenge.html">create one first</a>.</span>
+</div>
+
+<h2><span class="de">Was ist ein Commit?</span><span class="en">What is a commit?</span></h2>
+<p><span class="de">Ein Commit ist ein <strong>Speicherpunkt mit Begründung</strong>. Nicht nur „Datei gespeichert", sondern: <em>Wer</em> hat <em>was</em> geändert, <em>wann</em> und <em>warum</em>. Wie ein Eintrag im Logbuch deines Projekts.</span><span class="en">A commit is a <strong>save point with a reason</strong>. Not just "file saved", but: <em>who</em> changed <em>what</em>, <em>when</em> and <em>why</em>. Like a logbook entry for your project.</span></p>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Eine Datei im Browser bearbeiten</span><span class="en">Edit a file in the browser</span></div></div>
+  <ol>
+    <li><span class="de">Öffne dein Repository und klicke auf <strong>README.md</strong></span><span class="en">Open your repository and click <strong>README.md</strong></span></li>
+    <li><span class="de">Klicke auf das <strong>Stift-Icon</strong> ✏️ (Edit this file)</span><span class="en">Click the <strong>pencil icon</strong> ✏️ (Edit this file)</span></li>
+    <li><span class="de">Ergänze unter „Über mich" eine neue Zeile: <code>Dieses Repo wird aktiv gepflegt.</code></span><span class="en">Add a new line under "About me": <code>This repo is actively maintained.</code></span></li>
+    <li><span class="de">Klicke <strong>„Commit changes..."</strong></span><span class="en">Click <strong>"Commit changes..."</strong></span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Du hast deine erste Datei im Browser bearbeitet.</span><span class="en">✅ You edited your first file in the browser.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">2</div><div class="step-title"><span class="de">Commit-Messages die Sinn machen</span><span class="en">Commit messages that make sense</span></div></div>
+  <p><span class="de">Eine gute Commit-Message beschreibt <strong>was sich geändert hat und warum</strong>:</span><span class="en">A good commit message describes <strong>what changed and why</strong>:</span></p>
+  <ul>
+    <li><span class="de">❌ <code>Update</code> — sagt nichts</span><span class="en">❌ <code>Update</code> — says nothing</span></li>
+    <li><span class="de">❌ <code>Änderungen</code> — welche?</span><span class="en">❌ <code>Changes</code> — which ones?</span></li>
+    <li><span class="de">✅ <code>Budget auf 50k erhöht nach Abstimmung mit Marketing</code></span><span class="en">✅ <code>Increased budget to 50k after alignment with marketing</code></span></li>
+    <li><span class="de">✅ <code>Deadline Phase 2 auf Juni verschoben (Ressourcen-Engpass)</code></span><span class="en">✅ <code>Moved Phase 2 deadline to June (resource bottleneck)</code></span></li>
+  </ul>
+  <div class="tip"><span class="de">🎯 Faustregel: Dein zukünftiges Ich muss in 6 Monaten verstehen warum du das geändert hast.</span><span class="en">🎯 Rule of thumb: Your future self needs to understand why you made this change in 6 months.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">3</div><div class="step-title"><span class="de">Drei weitere Änderungen machen</span><span class="en">Make three more changes</span></div></div>
+  <ol>
+    <li><span class="de">Erstelle eine neue Datei: <strong>„Add file" → „Create new file"</strong> → Name: <code>notizen.md</code></span><span class="en">Create a new file: <strong>"Add file" → "Create new file"</strong> → Name: <code>notes.md</code></span></li>
+    <li><span class="de">Schreibe ein paar Zeilen rein, committe mit: <code>Notizen-Datei angelegt</code></span><span class="en">Write a few lines, commit with: <code>Created notes file</code></span></li>
+    <li><span class="de">Bearbeite die Datei nochmal und committe: <code>Erste Projektideen ergänzt</code></span><span class="en">Edit the file again and commit: <code>Added first project ideas</code></span></li>
+    <li><span class="de">Bearbeite README.md erneut und committe: <code>Link zu Notizen ergänzt</code></span><span class="en">Edit README.md again and commit: <code>Added link to notes</code></span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Du hast jetzt 5+ Commits. Dein Logbuch füllt sich!</span><span class="en">✅ You now have 5+ commits. Your logbook is filling up!</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">4</div><div class="step-title"><span class="de">Die Diff-Ansicht verstehen</span><span class="en">Understanding the diff view</span></div></div>
+  <ol>
+    <li><span class="de">Klicke oben auf <strong>„X commits"</strong> (die Commit-Historie)</span><span class="en">Click <strong>"X commits"</strong> at the top (the commit history)</span></li>
+    <li><span class="de">Klicke auf einen beliebigen Commit</span><span class="en">Click any commit</span></li>
+    <li><span class="de">Du siehst jetzt die <strong>Diff-Ansicht</strong>:</span><span class="en">You now see the <strong>diff view</strong>:</span></li>
+  </ol>
+  <ul>
+    <li><span class="de">🟢 <strong>Grüne Zeilen</strong> = neu hinzugefügt</span><span class="en">🟢 <strong>Green lines</strong> = newly added</span></li>
+    <li><span class="de">🔴 <strong>Rote Zeilen</strong> = entfernt</span><span class="en">🔴 <strong>Red lines</strong> = removed</span></li>
+    <li><span class="de">⬜ <strong>Weiße/graue Zeilen</strong> = unverändert (Kontext)</span><span class="en">⬜ <strong>White/gray lines</strong> = unchanged (context)</span></li>
+  </ul>
+  <div class="checkpoint"><span class="de">✅ Du kannst jetzt jede Änderung Zeile für Zeile nachvollziehen.</span><span class="en">✅ You can now trace every change line by line.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">5</div><div class="step-title"><span class="de">Eine alte Version wiederherstellen</span><span class="en">Restore an old version</span></div></div>
+  <ol>
+    <li><span class="de">Gehe zur Commit-Historie und klicke auf einen <strong>älteren Commit</strong></span><span class="en">Go to commit history and click an <strong>older commit</strong></span></li>
+    <li><span class="de">Klicke auf <strong>„Browse files"</strong> — du siehst den Zustand deines Repos zu diesem Zeitpunkt</span><span class="en">Click <strong>"Browse files"</strong> — you see your repo's state at that point in time</span></li>
+    <li><span class="de">Öffne eine Datei → klicke auf <strong>„Raw"</strong> → kopiere den alten Inhalt</span><span class="en">Open a file → click <strong>"Raw"</strong> → copy the old content</span></li>
+    <li><span class="de">Gehe zurück zum aktuellen Stand, bearbeite die Datei, füge den alten Inhalt ein</span><span class="en">Go back to current state, edit the file, paste the old content</span></li>
+    <li><span class="de">Committe: <code>README auf Version vom 23.03. zurückgesetzt</code></span><span class="en">Commit: <code>Reverted README to March 23 version</code></span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Du hast eine alte Version wiederhergestellt. Zeitreise!</span><span class="en">✅ You restored an old version. Time travel!</span></div>
+</div>
+
+<div class="celebration">
+  <h2>🎉 <span class="de">Modul 2 geschafft!</span><span class="en">Module 2 complete!</span></h2>
+  <p><span class="de">Du kannst jetzt Dateien bearbeiten, sinnvolle Commit-Messages schreiben, Diffs lesen und alte Versionen wiederherstellen. <strong>Nie wieder v3_final_FINAL.</strong></span><span class="en">You can now edit files, write meaningful commit messages, read diffs, and restore old versions. <strong>No more v3_final_FINAL.</strong></span></p>
+</div>
+
+<h2><span class="de">📖 Glossar</span><span class="en">📖 Glossary</span></h2>
+<div class="glossary"><dl>
+  <dt>Diff</dt><dd><span class="de">Die Ansicht die zeigt was sich zwischen zwei Versionen geändert hat. Grün = neu, Rot = entfernt.</span><span class="en">The view showing what changed between two versions. Green = added, Red = removed.</span></dd>
+  <dt>History</dt><dd><span class="de">Die chronologische Liste aller Commits — das Logbuch deines Projekts.</span><span class="en">The chronological list of all commits — your project's logbook.</span></dd>
+  <dt>Revert</dt><dd><span class="de">Eine Änderung rückgängig machen, indem man den alten Zustand wiederherstellt.</span><span class="en">Undoing a change by restoring the previous state.</span></dd>
+</dl></div>
+
+<div class="nav-footer">
+  <a href="challenge.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 1</span><span class="en">← Module 1</span></a>
+  <a href="modul3.html" class="btn"><span class="de">Modul 3 →</span><span class="en">Module 3 →</span></a>
+</div>
+</div>
+<footer><a href="index.html"><span class="de">← Übersicht</span><span class="en">← Overview</span></a></footer>
+<script>
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
+const s=localStorage.getItem('lang');if(s)setLang(s);
+</script>
+</body></html>

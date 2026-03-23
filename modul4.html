@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul 4 — Feedback ohne E-Mail-Ping-Pong</title>
+<meta name="description" content="Lerne Pull Requests als strukturierten Feedback-Prozess — für Texte, Konzepte und Policies, nicht nur Code.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="setLang('de')">DE</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
+<div class="container">
+<a href="index.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
+
+<h1><span class="de">Modul 4: Feedback ohne E-Mail-Ping-Pong</span><span class="en">Module 4: Feedback without email ping-pong</span></h1>
+<p class="subtitle"><span class="de">Branches, Pull Requests und Reviews — der strukturierte Weg zu besserer Zusammenarbeit.</span><span class="en">Branches, pull requests, and reviews — the structured path to better collaboration.</span></p>
+
+<h2><span class="de">Das Konzept</span><span class="en">The concept</span></h2>
+<p><span class="de">Ein <strong>Branch</strong> ist eine parallele Kopie deines Projekts. Du änderst dort etwas, ohne das Original zu berühren. Wenn du fertig bist, öffnest du einen <strong>Pull Request</strong> — das ist wie sagen: „Schau dir das an, bevor es übernommen wird."</span><span class="en">A <strong>branch</strong> is a parallel copy of your project. You change things there without touching the original. When done, you open a <strong>pull request</strong> — like saying: "Review this before it goes live."</span></p>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Einen Branch erstellen</span><span class="en">Create a branch</span></div></div>
+  <ol>
+    <li><span class="de">Öffne dein Repository → klicke auf das <strong>Branch-Dropdown</strong> (zeigt „main")</span><span class="en">Open your repository → click the <strong>branch dropdown</strong> (shows "main")</span></li>
+    <li><span class="de">Tippe: <code>entwurf-projektplan</code></span><span class="en">Type: <code>draft-project-plan</code></span></li>
+    <li><span class="de">Klicke <strong>„Create branch: entwurf-projektplan from main"</strong></span><span class="en">Click <strong>"Create branch: draft-project-plan from main"</strong></span></li>
+  </ol>
+  <div class="tip"><span class="de">💡 Du bist jetzt auf dem neuen Branch. Alles was du hier änderst, bleibt getrennt vom Original (main).</span><span class="en">💡 You're now on the new branch. Everything you change here stays separate from the original (main).</span></div>
+  <div class="checkpoint"><span class="de">✅ Dein Branch ist erstellt. Das Dropdown zeigt jetzt „entwurf-projektplan".</span><span class="en">✅ Your branch is created. The dropdown now shows "draft-project-plan".</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">2</div><div class="step-title"><span class="de">Auf dem Branch ein Dokument ändern</span><span class="en">Edit a document on the branch</span></div></div>
+  <ol>
+    <li><span class="de">Stelle sicher, dass oben <strong>„entwurf-projektplan"</strong> steht (nicht „main")</span><span class="en">Make sure <strong>"draft-project-plan"</strong> is shown above (not "main")</span></li>
+    <li><span class="de">Öffne README.md → Stift-Icon ✏️</span><span class="en">Open README.md → pencil icon ✏️</span></li>
+    <li><span class="de">Füge einen neuen Abschnitt hinzu: <code>## Nächste Schritte</code> mit 3 Punkten</span><span class="en">Add a new section: <code>## Next Steps</code> with 3 bullet points</span></li>
+    <li><span class="de">Committe: <code>Nächste Schritte ergänzt (Entwurf)</code></span><span class="en">Commit: <code>Added next steps (draft)</code></span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Änderung ist auf dem Branch gespeichert. Main ist unverändert.</span><span class="en">✅ Change is saved on the branch. Main is untouched.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">3</div><div class="step-title"><span class="de">Pull Request öffnen</span><span class="en">Open a pull request</span></div></div>
+  <ol>
+    <li><span class="de">GitHub zeigt oben einen gelben Banner: <strong>„Compare & pull request"</strong> → klicke darauf</span><span class="en">GitHub shows a yellow banner: <strong>"Compare & pull request"</strong> → click it</span></li>
+    <li><span class="de">Titel: <code>Nächste Schritte für den Projektplan</code></span><span class="en">Title: <code>Next steps for the project plan</code></span></li>
+    <li><span class="de">Beschreibung: Erkläre kurz was du geändert hast und warum</span><span class="en">Description: Briefly explain what you changed and why</span></li>
+    <li><span class="de">Klicke <strong>„Create pull request"</strong></span><span class="en">Click <strong>"Create pull request"</strong></span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Dein Pull Request ist offen! Du siehst die Diff-Ansicht deiner Änderungen.</span><span class="en">✅ Your pull request is open! You see the diff view of your changes.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">4</div><div class="step-title"><span class="de">Review-Kommentar schreiben</span><span class="en">Write a review comment</span></div></div>
+  <ol>
+    <li><span class="de">Klicke auf den Tab <strong>„Files changed"</strong></span><span class="en">Click the <strong>"Files changed"</strong> tab</span></li>
+    <li><span class="de">Hover über eine Zeile → es erscheint ein blaues <strong>+</strong></span><span class="en">Hover over a line → a blue <strong>+</strong> appears</span></li>
+    <li><span class="de">Klicke darauf und schreibe einen Kommentar: <code>Sollten wir hier ein Datum ergänzen?</code></span><span class="en">Click it and write a comment: <code>Should we add a date here?</code></span></li>
+    <li><span class="de">Klicke <strong>„Add single comment"</strong></span><span class="en">Click <strong>"Add single comment"</strong></span></li>
+  </ol>
+  <div class="tip"><span class="de">💡 Das ist der Killer-Feature: Feedback direkt an der Stelle im Dokument, nicht in einer separaten E-Mail. Stell dir das vor für Verträge, Policies, Marketingtexte…</span><span class="en">💡 This is the killer feature: feedback right where it matters in the document, not in a separate email. Imagine this for contracts, policies, marketing copy…</span></div>
+  <div class="checkpoint"><span class="de">✅ Dein Kommentar ist sichtbar — direkt neben der betroffenen Zeile.</span><span class="en">✅ Your comment is visible — right next to the affected line.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">5</div><div class="step-title"><span class="de">Pull Request mergen</span><span class="en">Merge the pull request</span></div></div>
+  <ol>
+    <li><span class="de">Gehe zurück zum Tab <strong>„Conversation"</strong></span><span class="en">Go back to the <strong>"Conversation"</strong> tab</span></li>
+    <li><span class="de">Klicke <strong>„Merge pull request"</strong> → <strong>„Confirm merge"</strong></span><span class="en">Click <strong>"Merge pull request"</strong> → <strong>"Confirm merge"</strong></span></li>
+    <li><span class="de">Optional: Lösche den Branch (<strong>„Delete branch"</strong>)</span><span class="en">Optional: Delete the branch (<strong>"Delete branch"</strong>)</span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Deine Änderungen sind jetzt in main. Der Review-Prozess ist dokumentiert.</span><span class="en">✅ Your changes are now in main. The review process is documented.</span></div>
+</div>
+
+<div class="celebration">
+  <h2>🎉 <span class="de">Modul 4 geschafft!</span><span class="en">Module 4 complete!</span></h2>
+  <p><span class="de">Du beherrschst jetzt den Pull-Request-Workflow: Branch → Änderung → Review → Merge. <strong>Nie wieder Feedback per E-Mail-Attachment.</strong></span><span class="en">You now master the pull request workflow: Branch → Change → Review → Merge. <strong>No more feedback via email attachments.</strong></span></p>
+</div>
+
+<h2><span class="de">📖 Glossar</span><span class="en">📖 Glossary</span></h2>
+<div class="glossary"><dl>
+  <dt>Branch</dt><dd><span class="de">Eine parallele Version deines Projekts. Wie „Speichern unter…" — experimentieren ohne das Original zu ändern.</span><span class="en">A parallel version of your project. Like "Save as..." — experiment without changing the original.</span></dd>
+  <dt>Pull Request (PR)</dt><dd><span class="de">„Schau dir meine Änderungen an, bevor sie übernommen werden." Ein strukturierter Review-Prozess.</span><span class="en">"Review my changes before they go live." A structured review process.</span></dd>
+  <dt>Merge</dt><dd><span class="de">Änderungen von einem Branch ins Original (main) übernehmen.</span><span class="en">Integrating changes from a branch into the original (main).</span></dd>
+  <dt>Review</dt><dd><span class="de">Kommentare und Feedback direkt an den geänderten Zeilen.</span><span class="en">Comments and feedback directly on the changed lines.</span></dd>
+</dl></div>
+
+<div class="nav-footer">
+  <a href="modul3.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 3</span><span class="en">← Module 3</span></a>
+  <a href="modul5.html" class="btn"><span class="de">Modul 5 →</span><span class="en">Module 5 →</span></a>
+</div>
+</div>
+<footer><a href="index.html"><span class="de">← Übersicht</span><span class="en">← Overview</span></a></footer>
+<script>
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
+const s=localStorage.getItem('lang');if(s)setLang(s);
+</script>
+</body></html>

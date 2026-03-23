@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul 6 — Dein GitHub-Gameplan</title>
+<meta name="description" content="Finde deinen konkreten Anwendungsfall für GitHub und überzeuge dein Team.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .decision-grid { display: grid; gap: 0.75rem; margin: 1rem 0; }
+  .decision-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem;
+  }
+  .decision-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .decision-text { flex: 1; }
+  .decision-text strong { display: block; margin-bottom: 0.25rem; }
+  .decision-text .verdict { font-size: 0.85rem; margin-top: 0.3rem; font-weight: 600; }
+  .verdict-yes { color: var(--green); }
+  .verdict-no { color: var(--orange); }
+  .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
+  .summary-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1rem; text-align: center;
+  }
+  .summary-card .num { font-size: 1.4rem; font-weight: 800; color: var(--accent); }
+  .summary-card .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; margin-top: 0.25rem; }
+  @media (max-width: 600px) { .summary-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="setLang('de')">DE</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
+<div class="container">
+<a href="index.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
+
+<h1><span class="de">Modul 6: Dein GitHub-Gameplan</span><span class="en">Module 6: Your GitHub Gameplan</span></h1>
+<p class="subtitle"><span class="de">Finde deinen konkreten Anwendungsfall — und überzeuge dein Team.</span><span class="en">Find your concrete use case — and convince your team.</span></p>
+
+<h2><span class="de">Wo passt GitHub — und wo nicht?</span><span class="en">Where does GitHub fit — and where not?</span></h2>
+
+<div class="decision-grid">
+  <div class="decision-card">
+    <div class="decision-icon">👥</div>
+    <div class="decision-text">
+      <strong><span class="de">Mehrere Leute arbeiten am gleichen Dokument</span><span class="en">Multiple people work on the same document</span></strong>
+      <span class="de">Versionskonflikte, verlorenes Feedback, unklarer Stand.</span><span class="en">Version conflicts, lost feedback, unclear status.</span>
+      <div class="verdict verdict-yes"><span class="de">✅ GitHub passt perfekt</span><span class="en">✅ GitHub is a perfect fit</span></div>
+    </div>
+  </div>
+  <div class="decision-card">
+    <div class="decision-icon">📋</div>
+    <div class="decision-text">
+      <strong><span class="de">Ich brauche Versionierung für wichtige Dateien</span><span class="en">I need versioning for important files</span></strong>
+      <span class="de">Verträge, Richtlinien, Forschungsdaten die sich ändern.</span><span class="en">Contracts, policies, research data that changes over time.</span>
+      <div class="verdict verdict-yes"><span class="de">✅ GitHub passt perfekt</span><span class="en">✅ GitHub is a perfect fit</span></div>
+    </div>
+  </div>
+  <div class="decision-card">
+    <div class="decision-icon">💬</div>
+    <div class="decision-text">
+      <strong><span class="de">Ich will Feedback-Prozesse strukturieren</span><span class="en">I want to structure feedback processes</span></strong>
+      <span class="de">Reviews die dokumentiert und nachvollziehbar sind.</span><span class="en">Reviews that are documented and traceable.</span>
+      <div class="verdict verdict-yes"><span class="de">✅ GitHub passt perfekt</span><span class="en">✅ GitHub is a perfect fit</span></div>
+    </div>
+  </div>
+  <div class="decision-card">
+    <div class="decision-icon">✅</div>
+    <div class="decision-text">
+      <strong><span class="de">Ich brauche ein einfaches To-Do</span><span class="en">I need a simple to-do list</span></strong>
+      <span class="de">Schnelle persönliche Aufgaben ohne Kollaboration.</span><span class="en">Quick personal tasks without collaboration.</span>
+      <div class="verdict verdict-no"><span class="de">⚠️ Overkill — nimm Notion, Todoist oder Apple Reminders</span><span class="en">⚠️ Overkill — use Notion, Todoist, or Apple Reminders</span></div>
+    </div>
+  </div>
+  <div class="decision-card">
+    <div class="decision-icon">💾</div>
+    <div class="decision-text">
+      <strong><span class="de">Ich will nur Dateien speichern</span><span class="en">I just want to store files</span></strong>
+      <span class="de">Backup ohne Kollaboration oder Versionierung.</span><span class="en">Backup without collaboration or versioning.</span>
+      <div class="verdict verdict-no"><span class="de">⚠️ Overkill — nimm Google Drive, Dropbox oder iCloud</span><span class="en">⚠️ Overkill — use Google Drive, Dropbox, or iCloud</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Deinen Anwendungsfall wählen</span><span class="en">Choose your use case</span></div></div>
+  <p><span class="de">Denke an deinen Alltag: Wo hast du ein Versionsproblem? Wo geht Feedback verloren? Wo arbeiten mehrere Leute am gleichen Material? <strong>Das ist dein Anwendungsfall.</strong></span><span class="en">Think about your daily work: Where do you have a versioning problem? Where does feedback get lost? Where do multiple people work on the same material? <strong>That's your use case.</strong></span></p>
+  <div class="checkpoint"><span class="de">✅ Du hast einen konkreten Anwendungsfall im Kopf.</span><span class="en">✅ You have a concrete use case in mind.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">2</div><div class="step-title"><span class="de">Repository dafür anlegen</span><span class="en">Create a repository for it</span></div></div>
+  <ol>
+    <li><span class="de">Neues Repository mit einem sprechenden Namen</span><span class="en">New repository with a descriptive name</span></li>
+    <li><span class="de">README erstellen mit dieser Struktur:</span><span class="en">Create a README with this structure:</span></li>
+  </ol>
+  <div class="card" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap; background: var(--bg);">
+# [Projektname]
+
+## Problem
+[Was ist das aktuelle Problem? 2-3 Sätze.]
+
+## Lösung
+[Wie löst GitHub dieses Problem?]
+
+## Erste Schritte
+1. [Erster konkreter Schritt]
+2. [Zweiter Schritt]
+3. [Dritter Schritt]
+
+## Team
+- [Wer ist beteiligt?]</div>
+  <div class="checkpoint"><span class="de">✅ Dein Business-Case-Repo steht.</span><span class="en">✅ Your business case repo is ready.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">3</div><div class="step-title"><span class="de">3 Issues für die ersten Aufgaben</span><span class="en">3 issues for the first tasks</span></div></div>
+  <p><span class="de">Erstelle 3 Issues die den Einstieg markieren — z.B.:</span><span class="en">Create 3 issues marking the start — e.g.:</span></p>
+  <ol>
+    <li><code><span class="de">Bestehendes Material sammeln und hochladen</span><span class="en">Collect and upload existing material</span></code></li>
+    <li><code><span class="de">Team einladen und Rollen klären</span><span class="en">Invite team and clarify roles</span></code></li>
+    <li><code><span class="de">Ersten Review-Zyklus durchführen (Pull Request)</span><span class="en">Run first review cycle (Pull Request)</span></code></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Dein Projekt hat einen Startplan.</span><span class="en">✅ Your project has a starting plan.</span></div>
+</div>
+
+<h2><span class="de">🗣️ Wie überzeugt man Kollegen?</span><span class="en">🗣️ How to convince colleagues?</span></h2>
+<div class="card">
+  <p><strong><span class="de">1. Zeig das Problem, nicht das Tool.</span><span class="en">1. Show the problem, not the tool.</span></strong><br>
+  <span class="de" style="color:var(--muted);">„Wir haben letzte Woche 3 Stunden damit verbracht, die aktuelle Version des Projektplans zu finden."</span><span class="en" style="color:var(--muted);">"We spent 3 hours last week finding the current version of the project plan."</span></p>
+  <p style="margin-top:1rem;"><strong><span class="de">2. Starte klein.</span><span class="en">2. Start small.</span></strong><br>
+  <span class="de" style="color:var(--muted);">Ein Dokument, zwei Leute, eine Woche. Nicht das ganze Team auf einmal umstellen.</span><span class="en" style="color:var(--muted);">One document, two people, one week. Don't switch the whole team at once.</span></p>
+  <p style="margin-top:1rem;"><strong><span class="de">3. Sei der Erste der es vorlebt.</span><span class="en">3. Be the first to lead by example.</span></strong><br>
+  <span class="de" style="color:var(--muted);">Richte das Repo ein, schreibe die README, erstelle die Issues. Mach es so einfach wie möglich für andere mitzumachen.</span><span class="en" style="color:var(--muted);">Set up the repo, write the README, create the issues. Make it as easy as possible for others to join.</span></p>
+</div>
+
+<div class="celebration" style="border-color: var(--accent);">
+  <h2 style="color: var(--accent);">🏆 <span class="de">Lernreise abgeschlossen!</span><span class="en">Learning journey complete!</span></h2>
+  <p><span class="de">Du hast alle 6 Module durchgearbeitet. Hier ist was du jetzt kannst:</span><span class="en">You completed all 6 modules. Here's what you can do now:</span></p>
+</div>
+
+<div class="summary-grid">
+  <div class="summary-card"><div class="num">📁</div><div class="label"><span class="de">Repos erstellen</span><span class="en">Create repos</span></div></div>
+  <div class="summary-card"><div class="num">📝</div><div class="label"><span class="de">Dateien versionieren</span><span class="en">Version files</span></div></div>
+  <div class="summary-card"><div class="num">📋</div><div class="label"><span class="de">Projekte organisieren</span><span class="en">Organize projects</span></div></div>
+  <div class="summary-card"><div class="num">💬</div><div class="label"><span class="de">Feedback strukturieren</span><span class="en">Structure feedback</span></div></div>
+  <div class="summary-card"><div class="num">🌐</div><div class="label"><span class="de">Websites veröffentlichen</span><span class="en">Publish websites</span></div></div>
+  <div class="summary-card"><div class="num">🎯</div><div class="label"><span class="de">Use Cases identifizieren</span><span class="en">Identify use cases</span></div></div>
+</div>
+
+<div class="card" style="text-align:center; margin: 2rem 0;">
+  <p style="font-size:1.1rem; font-weight:700; margin-bottom:0.75rem;"><span class="de">Hat dir die Lernreise geholfen?</span><span class="en">Did this learning journey help you?</span></p>
+  <p style="color:var(--muted); margin-bottom:1rem;"><span class="de">Teile sie mit jemandem, der auch vor der „Programmier-Wand" steht.</span><span class="en">Share it with someone who also faces the "programming wall."</span></p>
+  <a href="https://linkedin.com/in/janrummel" class="btn" style="margin-right:0.5rem;"><span class="de">Jan auf LinkedIn</span><span class="en">Jan on LinkedIn</span></a>
+  <a href="index.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Zur Übersicht</span><span class="en">← To overview</span></a>
+</div>
+
+<h2><span class="de">📖 Gesamtglossar</span><span class="en">📖 Complete Glossary</span></h2>
+<div class="glossary"><dl>
+  <dt>Repository (Repo)</dt><dd><span class="de">Projektordner mit Gedächtnis. Speichert Dateien + Änderungshistorie.</span><span class="en">Project folder with memory. Stores files + change history.</span></dd>
+  <dt>Commit</dt><dd><span class="de">Gespeicherter Änderungsschritt mit Zeitstempel, Name und Begründung.</span><span class="en">Saved change step with timestamp, name, and reason.</span></dd>
+  <dt>README.md</dt><dd><span class="de">Startseite deines Projekts. Wird automatisch angezeigt.</span><span class="en">Front page of your project. Displayed automatically.</span></dd>
+  <dt>Diff</dt><dd><span class="de">Ansicht die zeigt was sich geändert hat. Grün = neu, Rot = entfernt.</span><span class="en">View showing what changed. Green = added, Red = removed.</span></dd>
+  <dt>Branch</dt><dd><span class="de">Parallele Version zum Experimentieren ohne das Original zu ändern.</span><span class="en">Parallel version for experimenting without changing the original.</span></dd>
+  <dt>Pull Request (PR)</dt><dd><span class="de">Strukturierter Review-Prozess: „Schau dir das an bevor es übernommen wird."</span><span class="en">Structured review: "Review this before it goes live."</span></dd>
+  <dt>Merge</dt><dd><span class="de">Änderungen von einem Branch ins Original übernehmen.</span><span class="en">Integrate changes from a branch into the original.</span></dd>
+  <dt>Issue</dt><dd><span class="de">Aufgabe, Idee oder Frage — digitales Post-It mit Diskussion.</span><span class="en">Task, idea, or question — digital Post-It with discussion.</span></dd>
+  <dt>Label</dt><dd><span class="de">Farbiger Marker zum Kategorisieren von Issues.</span><span class="en">Colored marker for categorizing issues.</span></dd>
+  <dt>GitHub Pages</dt><dd><span class="de">Kostenloses Website-Hosting direkt aus einem Repository.</span><span class="en">Free website hosting directly from a repository.</span></dd>
+  <dt>Markdown</dt><dd><span class="de">Einfaches Textformat mit Struktur (# Überschrift, **fett**, - Liste).</span><span class="en">Simple text format with structure (# heading, **bold**, - list).</span></dd>
+</dl></div>
+
+<div class="nav-footer">
+  <a href="modul5.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 5</span><span class="en">← Module 5</span></a>
+  <a href="index.html" class="btn"><span class="de">Zur Übersicht →</span><span class="en">To overview →</span></a>
+</div>
+</div>
+<footer><a href="index.html"><span class="de">← Übersicht</span><span class="en">← Overview</span></a></footer>
+<script>
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
+const s=localStorage.getItem('lang');if(s)setLang(s);
+</script>
+</body></html>

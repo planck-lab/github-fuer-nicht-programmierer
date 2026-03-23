@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul 5 — In 10 Minuten live</title>
+<meta name="description" content="Erstelle deine eigene Website mit GitHub Pages — kostenlos, in 10 Minuten, ohne Code.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="setLang('de')">DE</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
+<div class="container">
+<a href="index.html" class="back-link"><span class="de">← Übersicht</span><span class="en">← Overview</span></a>
+
+<h1><span class="de">Modul 5: In 10 Minuten live</span><span class="en">Module 5: Live in 10 minutes</span></h1>
+<p class="subtitle"><span class="de">Deine eigene Website mit GitHub Pages — kostenlos, ohne Setup, ohne Hosting.</span><span class="en">Your own website with GitHub Pages — free, no setup, no hosting.</span></p>
+
+<h2><span class="de">Was ist GitHub Pages?</span><span class="en">What is GitHub Pages?</span></h2>
+<p><span class="de">GitHub kann jedes Repository automatisch als <strong>Website veröffentlichen</strong>. Du schreibst Markdown-Dateien, GitHub macht daraus eine schöne Seite. Kostenlos. Für immer. Perfekt für Portfolios, Projekt-Dokumentation, interne Handbücher oder Forschungs-Landingpages.</span><span class="en">GitHub can automatically publish any repository as a <strong>website</strong>. You write Markdown files, GitHub turns them into a beautiful page. Free. Forever. Perfect for portfolios, project documentation, internal handbooks, or research landing pages.</span></p>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Neues Repository erstellen</span><span class="en">Create a new repository</span></div></div>
+  <ol>
+    <li><span class="de"><strong>„+"</strong> → <strong>„New repository"</strong></span><span class="en"><strong>"+"</strong> → <strong>"New repository"</strong></span></li>
+    <li><span class="de">Name: <code>meine-seite</code></span><span class="en">Name: <code>my-site</code></span></li>
+    <li><span class="de">✅ <strong>Public</strong> (Pages funktioniert im Free Plan nur bei öffentlichen Repos)</span><span class="en">✅ <strong>Public</strong> (Pages only works with public repos on the free plan)</span></li>
+    <li><span class="de">✅ <strong>Add a README file</strong></span><span class="en">✅ <strong>Add a README file</strong></span></li>
+    <li><span class="de"><strong>„Create repository"</strong></span><span class="en"><strong>"Create repository"</strong></span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Neues Repo ist da.</span><span class="en">✅ New repo is ready.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">2</div><div class="step-title"><span class="de">index.md erstellen</span><span class="en">Create index.md</span></div></div>
+  <ol>
+    <li><span class="de"><strong>„Add file" → „Create new file"</strong></span><span class="en"><strong>"Add file" → "Create new file"</strong></span></li>
+    <li><span class="de">Name: <code>index.md</code></span><span class="en">Name: <code>index.md</code></span></li>
+    <li><span class="de">Schreibe Markdown — hier ein Starter:</span><span class="en">Write Markdown — here's a starter:</span></li>
+  </ol>
+  <div class="card" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap; background: var(--bg); border-color: var(--border);">
+# Willkommen auf meiner Seite
+
+## Über mich
+Ich bin [Name] und arbeite als [Beruf].
+
+## Projekte
+- **Projekt A:** Kurze Beschreibung
+- **Projekt B:** Kurze Beschreibung
+
+## Kontakt
+- [LinkedIn](https://linkedin.com/in/dein-profil)
+- [E-Mail](mailto:deine@email.de)</div>
+  <ol start="4">
+    <li><span class="de">Committe: <code>Startseite erstellt</code></span><span class="en">Commit: <code>Created homepage</code></span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Deine index.md ist da — die wird zur Startseite.</span><span class="en">✅ Your index.md is there — it becomes the homepage.</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">3</div><div class="step-title"><span class="de">GitHub Pages aktivieren</span><span class="en">Activate GitHub Pages</span></div></div>
+  <ol>
+    <li><span class="de">Gehe zu <strong>Settings</strong> (im Repo, nicht Account-Settings)</span><span class="en">Go to <strong>Settings</strong> (in the repo, not account settings)</span></li>
+    <li><span class="de">Links: <strong>„Pages"</strong></span><span class="en">Left sidebar: <strong>"Pages"</strong></span></li>
+    <li><span class="de">Source: <strong>„Deploy from a branch"</strong></span><span class="en">Source: <strong>"Deploy from a branch"</strong></span></li>
+    <li><span class="de">Branch: <strong>main</strong>, Folder: <strong>/ (root)</strong></span><span class="en">Branch: <strong>main</strong>, Folder: <strong>/ (root)</strong></span></li>
+    <li><span class="de">Klicke <strong>Save</strong></span><span class="en">Click <strong>Save</strong></span></li>
+  </ol>
+  <div class="tip"><span class="de">💡 Warte 1-2 Minuten. GitHub baut deine Seite im Hintergrund.</span><span class="en">💡 Wait 1-2 minutes. GitHub builds your site in the background.</span></div>
+  <div class="checkpoint"><span class="de">✅ Oben erscheint die URL: <code>dein-username.github.io/meine-seite</code></span><span class="en">✅ The URL appears above: <code>your-username.github.io/my-site</code></span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">4</div><div class="step-title"><span class="de">Theme auswählen</span><span class="en">Choose a theme</span></div></div>
+  <ol>
+    <li><span class="de">Erstelle eine Datei <code>_config.yml</code> im Repo</span><span class="en">Create a file <code>_config.yml</code> in the repo</span></li>
+    <li><span class="de">Inhalt: <code>remote_theme: pages-themes/cayman@v0.2.0</code></span><span class="en">Content: <code>remote_theme: pages-themes/cayman@v0.2.0</code></span></li>
+    <li><span class="de">Committe — nach 1-2 Min sieht deine Seite professionell aus</span><span class="en">Commit — after 1-2 min your site looks professional</span></li>
+  </ol>
+  <div class="tip"><span class="de">💡 Andere Themes: <code>minimal</code>, <code>slate</code>, <code>dinky</code>, <code>tactile</code>. Einfach den Namen austauschen.</span><span class="en">💡 Other themes: <code>minimal</code>, <code>slate</code>, <code>dinky</code>, <code>tactile</code>. Just swap the name.</span></div>
+  <div class="checkpoint"><span class="de">✅ Deine Seite hat ein professionelles Design!</span><span class="en">✅ Your site has a professional design!</span></div>
+</div>
+
+<div class="step">
+  <div class="step-header"><div class="step-num">5</div><div class="step-title"><span class="de">Live-URL aufrufen und teilen</span><span class="en">Visit and share the live URL</span></div></div>
+  <ol>
+    <li><span class="de">Öffne <code>https://dein-username.github.io/meine-seite</code></span><span class="en">Open <code>https://your-username.github.io/my-site</code></span></li>
+    <li><span class="de">Das ist deine Website. Live. Kostenlos. Für immer.</span><span class="en">That's your website. Live. Free. Forever.</span></li>
+    <li><span class="de">Teile den Link — per LinkedIn, E-Mail, Slack, wo auch immer</span><span class="en">Share the link — via LinkedIn, email, Slack, wherever</span></li>
+  </ol>
+  <div class="checkpoint"><span class="de">✅ Du hast eine eigene Website. Ohne Hosting-Anbieter, ohne Kosten, ohne Code.</span><span class="en">✅ You have your own website. No hosting provider, no costs, no code.</span></div>
+</div>
+
+<div class="celebration">
+  <h2>🎉 <span class="de">Modul 5 geschafft!</span><span class="en">Module 5 complete!</span></h2>
+  <p><span class="de">Du hast gerade eine Website veröffentlicht — mit Markdown und GitHub Pages. <strong>Keine Programmierkenntnisse nötig.</strong></span><span class="en">You just published a website — with Markdown and GitHub Pages. <strong>No programming skills needed.</strong></span></p>
+</div>
+
+<h2><span class="de">📖 Markdown Cheatsheet</span><span class="en">📖 Markdown Cheatsheet</span></h2>
+<div class="glossary">
+<table style="width:100%; font-size: 0.85rem;">
+  <tr><td style="color:var(--accent);font-weight:700;padding:0.3rem 0;"><code># Überschrift</code></td><td style="color:var(--muted);padding:0.3rem 0;"><span class="de">Große Überschrift</span><span class="en">Large heading</span></td></tr>
+  <tr><td style="color:var(--accent);font-weight:700;padding:0.3rem 0;"><code>## Unter</code></td><td style="color:var(--muted);padding:0.3rem 0;"><span class="de">Unterüberschrift</span><span class="en">Subheading</span></td></tr>
+  <tr><td style="color:var(--accent);font-weight:700;padding:0.3rem 0;"><code>**fett**</code></td><td style="color:var(--muted);padding:0.3rem 0;"><strong>fett</strong></td></tr>
+  <tr><td style="color:var(--accent);font-weight:700;padding:0.3rem 0;"><code>*kursiv*</code></td><td style="color:var(--muted);padding:0.3rem 0;"><em>kursiv</em></td></tr>
+  <tr><td style="color:var(--accent);font-weight:700;padding:0.3rem 0;"><code>- Punkt</code></td><td style="color:var(--muted);padding:0.3rem 0;"><span class="de">Aufzählung</span><span class="en">Bullet list</span></td></tr>
+  <tr><td style="color:var(--accent);font-weight:700;padding:0.3rem 0;"><code>[Text](URL)</code></td><td style="color:var(--muted);padding:0.3rem 0;">Link</td></tr>
+  <tr><td style="color:var(--accent);font-weight:700;padding:0.3rem 0;"><code>![Alt](bild.jpg)</code></td><td style="color:var(--muted);padding:0.3rem 0;"><span class="de">Bild einbinden</span><span class="en">Embed image</span></td></tr>
+</table>
+</div>
+
+<div class="nav-footer">
+  <a href="modul4.html" class="btn" style="background: var(--surface); color: var(--text); border: 1px solid var(--border);"><span class="de">← Modul 4</span><span class="en">← Module 4</span></a>
+  <a href="modul6.html" class="btn"><span class="de">Modul 6 →</span><span class="en">Module 6 →</span></a>
+</div>
+</div>
+<footer><a href="index.html"><span class="de">← Übersicht</span><span class="en">← Overview</span></a></footer>
+<script>
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
+const s=localStorage.getItem('lang');if(s)setLang(s);
+</script>
+</body></html>
