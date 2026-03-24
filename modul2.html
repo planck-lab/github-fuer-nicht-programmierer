@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modul 2 — Schluss mit v3_final_FINAL</title>
 <meta name="description" content="Lerne Dateien zu versionieren, Änderungen nachzuvollziehen und alte Versionen wiederherzustellen — ohne Code.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📁</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,6 +35,31 @@
 <div class="tip">
   <span class="de">💡 Voraussetzung: Du hast ein Repository aus Modul 1. Falls nicht, <a href="modul1.html">erstelle zuerst eins</a>.</span>
   <span class="en">💡 Prerequisite: You have a repository from Module 1. If not, <a href="modul1.html">create one first</a>.</span>
+</div>
+
+<!-- Before/After Comparison -->
+<div class="comparison">
+  <div class="compare-card bad">
+    <h4><span class="de">❌ Vorher: Ordner-Chaos</span><span class="en">❌ Before: Folder Chaos</span></h4>
+    <p style="font-family:monospace;font-size:0.8rem;line-height:1.6;">
+      📄 Projektplan.docx<br>
+      📄 Projektplan_v2.docx<br>
+      📄 Projektplan_v2_überarbeitet.docx<br>
+      📄 Projektplan_v3_final_FINAL.docx<br>
+      <span style="color:var(--orange);">❓ Welche Version zählt?</span>
+    </p>
+  </div>
+  <div class="compare-card good">
+    <h4><span class="de">✅ Nachher: Git-Versionen</span><span class="en">✅ After: Git Versions</span></h4>
+    <p style="font-family:monospace;font-size:0.8rem;line-height:1.6;">
+      📄 Projektplan.md<br>
+      └─ <span class="de">Commit-Historie:</span><span class="en">Commit history:</span><br>
+      &nbsp;&nbsp;• 24.03. Jan: Budget +10k<br>
+      &nbsp;&nbsp;• 23.03. Lisa: Deadline Q2<br>
+      &nbsp;&nbsp;• 22.03. <span class="de">Erste Version</span><span class="en">First version</span><br>
+      <span style="color:var(--green);">✅ <span class="de">Eine Datei, volle Historie</span><span class="en">One file, full history</span></span>
+    </p>
+  </div>
 </div>
 
 <h2><span class="de">Was ist ein Commit?</span><span class="en">What is a commit?</span></h2>
@@ -138,4 +164,5 @@
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
+<script src="glossary.js"></script>
 </body></html>

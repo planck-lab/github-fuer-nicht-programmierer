@@ -10,6 +10,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://janrummel.github.io/github-fuer-nicht-programmierer/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Jan Rummel">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📁</text></svg>">
 <link rel="stylesheet" href="style.css">
 <style>
   .hero { text-align: center; padding: 5rem 2rem 2rem; max-width: 720px; margin: 0 auto; }
@@ -230,6 +232,40 @@
   </p>
 </section>
 
+<!-- Capstone Teaser -->
+<section>
+  <div class="cta-box" style="border-color: var(--green); text-align: left;">
+    <h3 style="color: var(--green);">
+      <span class="de">🏆 Was du am Ende hast</span>
+      <span class="en">🏆 What you'll have at the end</span>
+    </h3>
+    <ul style="color: var(--muted); font-size: 0.9rem; padding-left: 1.5rem; margin-top: 0.75rem;">
+      <li><span class="de">Ein dokumentiertes Projekt-Repository mit README</span><span class="en">A documented project repository with README</span></li>
+      <li><span class="de">5+ versionierte Commits mit beschreibenden Messages</span><span class="en">5+ versioned commits with descriptive messages</span></li>
+      <li><span class="de">Issues mit Labels und ein Kanban-Board</span><span class="en">Issues with labels and a Kanban board</span></li>
+      <li><span class="de">1 abgeschlossener Pull Request mit Review</span><span class="en">1 completed pull request with review</span></li>
+      <li><span class="de">1 live Website auf GitHub Pages</span><span class="en">1 live website on GitHub Pages</span></li>
+      <li><span class="de">Einen 3-Satz-Pitch um dein Team zu überzeugen</span><span class="en">A 3-sentence pitch to convince your team</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Science + Stats -->
+<section>
+  <h2>
+    <span class="de">Warum das funktioniert</span>
+    <span class="en">Why this works</span>
+  </h2>
+  <div class="source">
+    <span class="de">📚 90% der Fortune 100 nutzen GitHub. 1 Milliarde Contributions in 2024. 36 Millionen neue Developer in einem Jahr. (<a href="https://github.blog/news-insights/octoverse/octoverse-2024/" target="_blank">GitHub Octoverse 2024</a>)</span>
+    <span class="en">📚 90% of Fortune 100 use GitHub. 1 billion contributions in 2024. 36 million new developers in one year. (<a href="https://github.blog/news-insights/octoverse/octoverse-2024/" target="_blank">GitHub Octoverse 2024</a>)</span>
+  </div>
+  <p style="color: var(--muted); font-size: 0.9rem; margin-top: 0.75rem;">
+    <span class="de">Dieser Kurs basiert auf Forschung zu Version Control in Knowledge Work, Constructivist Learning und Collaborative Writing — mit Quellenangaben in jedem Modul.</span>
+    <span class="en">This course is based on research in Version Control for Knowledge Work, Constructivist Learning, and Collaborative Writing — with citations in every module.</span>
+  </p>
+</section>
+
 <!-- FAQ / Objection Handling -->
 <section>
   <h2>
@@ -309,8 +345,9 @@
   <br><span style="font-size:0.7rem;"><span class="de">Fragen? <a href="https://linkedin.com/in/janrummel">Schreib mir auf LinkedIn.</a></span><span class="en">Questions? <a href="https://linkedin.com/in/janrummel">Message me on LinkedIn.</a></span></span>
 </footer>
 
+<script src="glossary.js"></script>
 <script>
-function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
+function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l);initGlossary()}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
 </body></html>

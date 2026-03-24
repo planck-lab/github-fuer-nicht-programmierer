@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modul 1 — GitHub ist nicht was du denkst</title>
 <meta name="description" content="Erstelle dein erstes GitHub-Repository in 20 Minuten. Ohne Code, ohne Vorkenntnisse. Nur ein Browser.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📁</text></svg>">
 <link rel="stylesheet" href="style.css">
 <style>
   .fast-lane { background: rgba(210,153,34,0.1); border: 1px solid rgba(210,153,34,0.3); border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--orange); }
@@ -146,6 +147,16 @@ Ich bin [DEIN NAME] und arbeite als [DEIN BERUF].
   <span class="en">👉 <strong>Next:</strong> In Module 2 you'll learn why "v3_final_FINAL" is never needed again — and how to restore old versions.</span></p>
 </div>
 
+<div class="troubleshooting">
+  <strong><span class="de">❓ Häufige Probleme</span><span class="en">❓ Common Issues</span></strong>
+  <p><span class="de"><strong>"Repository name already exists"</strong> → Wähle einen anderen Namen oder lösche das bestehende Repo unter Settings → Danger Zone.</span>
+  <span class="en"><strong>"Repository name already exists"</strong> → Choose a different name or delete the existing repo under Settings → Danger Zone.</span></p>
+  <p><span class="de"><strong>"+" Button nicht sichtbar</strong> → Du bist nicht eingeloggt. Gehe zu github.com und logge dich ein.</span>
+  <span class="en"><strong>"+" button not visible</strong> → You're not logged in. Go to github.com and log in.</span></p>
+  <p><span class="de"><strong>README zeigt nur Text, keine Formatierung</strong> → Prüfe ob die Datei wirklich README.md heißt (mit .md am Ende).</span>
+  <span class="en"><strong>README shows plain text, no formatting</strong> → Check that the file is actually named README.md (with .md extension).</span></p>
+</div>
+
 <h2><span class="de">📖 Glossar</span><span class="en">📖 Glossary</span></h2>
 <div class="glossary"><dl>
   <dt>Repository (Repo)</dt><dd><span class="de">Ein Projektordner mit Gedächtnis. Speichert alle Dateien und ihre komplette Änderungshistorie.</span><span class="en">A project folder with memory. Stores all files and their complete change history.</span></dd>
@@ -165,4 +176,5 @@ function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.
 function copyTemplate(){const t=document.getElementById('readme-template').innerText.replace('📋 Copy','').trim();navigator.clipboard.writeText(t);document.querySelector('.copy-btn').innerText='✅ Copied!';setTimeout(()=>document.querySelector('.copy-btn').innerText='📋 Copy',2000)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
+<script src="glossary.js"></script>
 </body></html>

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modul 4 — Feedback ohne E-Mail-Ping-Pong</title>
 <meta name="description" content="Lerne Pull Requests als strukturierten Feedback-Prozess — für Texte, Konzepte und Policies, nicht nur Code.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📁</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -128,4 +129,5 @@
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
+<script src="glossary.js"></script>
 </body></html>

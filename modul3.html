@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modul 3 — Projekte sichtbar machen</title>
 <meta name="description" content="Nutze GitHub Issues und Projects als Kanban-Board für deine Projekte — ohne Code.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📁</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -102,6 +103,11 @@
     </ul>
   </div>
 
+  <div class="source">
+    <span class="de">📚 „Collaborative writing is an iterative and social process that involves a team focused on a common objective." (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8187494/" target="_blank">PMC, 2022</a>)</span>
+    <span class="en">📚 "Collaborative writing is an iterative and social process that involves a team focused on a common objective." (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8187494/" target="_blank">PMC, 2022</a>)</span>
+  </div>
+
   <p><span class="de">👉 <strong>Nächster Schritt:</strong> In Modul 4 lernst du den Pull-Request-Workflow — Feedback direkt an der betroffenen Zeile, statt E-Mail-Ping-Pong.</span>
   <span class="en">👉 <strong>Next:</strong> In Module 4 you'll learn the pull request workflow — feedback directly on the affected line, instead of email ping-pong.</span></p>
 </div>
@@ -124,4 +130,5 @@
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
+<script src="glossary.js"></script>
 </body></html>
