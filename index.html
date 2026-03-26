@@ -354,4 +354,7 @@
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l);initGlossary()}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
+<!-- GoatCounter Analytics - code wird nach Account-Setup eingesetzt -->
+<!-- <script data-goatcounter="https://SITECODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+
 </body></html>
