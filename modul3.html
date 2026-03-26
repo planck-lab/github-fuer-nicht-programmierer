@@ -36,6 +36,65 @@
 <h2><span class="de">Issues sind nicht nur für Bugs</span><span class="en">Issues aren't just for bugs</span></h2>
 <p><span class="de">Ein Issue ist eine <strong>universelle Aufgaben-Einheit</strong>. Es kann ein Bug sein, aber auch: eine Idee, eine Aufgabe, eine Frage, ein Verbesserungsvorschlag. Denk an Post-Its auf einem Whiteboard — nur digital und nachvollziehbar.</span><span class="en">An issue is a <strong>universal task unit</strong>. It can be a bug, but also: an idea, a task, a question, a suggestion. Think of Post-Its on a whiteboard — but digital and traceable.</span></p>
 
+<figure class="viz-kanban-board" style="max-width: 700px; margin: 2rem auto; background: var(--surface); border-radius: 12px; padding: 1.5rem; border: 1px solid var(--border);">
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+    <!-- To Do Column -->
+    <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+      <div style="font-weight: 700; color: var(--text); margin-bottom: 0.75rem; font-size: 0.9rem; text-align: center;">
+        <span class="de">To Do</span><span class="en">To Do</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <div style="background: var(--surface); border: 1px solid var(--orange); border-left: 3px solid var(--orange); padding: 0.5rem; border-radius: 4px; font-size: 0.75rem;">
+          <div style="color: var(--text); font-weight: 600;">#1</div>
+          <div style="color: var(--muted); margin-top: 0.25rem;"><span class="de">Venue buchen</span><span class="en">Book venue</span></div>
+        </div>
+        <div style="background: var(--surface); border: 1px solid var(--purple); border-left: 3px solid var(--purple); padding: 0.5rem; border-radius: 4px; font-size: 0.75rem;">
+          <div style="color: var(--text); font-weight: 600;">#2</div>
+          <div style="color: var(--muted); margin-top: 0.25rem;"><span class="de">Speaker anfragen</span><span class="en">Contact speakers</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- In Progress Column -->
+    <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+      <div style="font-weight: 700; color: var(--text); margin-bottom: 0.75rem; font-size: 0.9rem; text-align: center;">
+        <span class="de">In Progress</span><span class="en">In Progress</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <div style="background: var(--surface); border: 1px solid var(--accent); border-left: 3px solid var(--accent); padding: 0.5rem; border-radius: 4px; font-size: 0.75rem;">
+          <div style="color: var(--text); font-weight: 600;">#3</div>
+          <div style="color: var(--muted); margin-top: 0.25rem;"><span class="de">Catering</span><span class="en">Catering</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Done Column -->
+    <div style="background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+      <div style="font-weight: 700; color: var(--text); margin-bottom: 0.75rem; font-size: 0.9rem; text-align: center;">
+        <span class="de">Done</span><span class="en">Done</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <div style="background: var(--surface); border: 1px solid var(--green); border-left: 3px solid var(--green); padding: 0.5rem; border-radius: 4px; font-size: 0.75rem; opacity: 0.7;">
+          <div style="color: var(--text); font-weight: 600;">#4</div>
+          <div style="color: var(--muted); margin-top: 0.25rem;"><span class="de">Budget-Plan</span><span class="en">Budget plan</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <figcaption style="margin-top: 1rem; font-size: 0.85rem; color: var(--muted); text-align: center;">
+    <span class="de">Kanban-Board: Der Projekt-Status auf einen Blick — jede Karte ist ein Issue.</span>
+    <span class="en">Kanban board: project status at a glance — each card is an issue.</span>
+  </figcaption>
+</figure>
+
+<style>
+@media (max-width: 600px) {
+  .viz-kanban-board > div {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
+
 <div class="step">
   <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Erstes Issue erstellen</span><span class="en">Create your first issue</span></div></div>
   <ol>

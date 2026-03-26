@@ -36,6 +36,49 @@
 <h2><span class="de">Was ist GitHub Pages?</span><span class="en">What is GitHub Pages?</span></h2>
 <p><span class="de">GitHub kann jedes Repository automatisch als <strong>Website veröffentlichen</strong>. Du schreibst Markdown-Dateien, GitHub macht daraus eine schöne Seite. Kostenlos. Für immer. Perfekt für Portfolios, Projekt-Dokumentation, interne Handbücher oder Forschungs-Landingpages.</span><span class="en">GitHub can automatically publish any repository as a <strong>website</strong>. You write Markdown files, GitHub turns them into a beautiful page. Free. Forever. Perfect for portfolios, project documentation, internal handbooks, or research landing pages.</span></p>
 
+<figure class="viz-pages-pipeline" style="max-width: 700px; margin: 2rem auto; background: var(--surface); border-radius: 12px; padding: 1.5rem; border: 1px solid var(--border);">
+  <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; justify-content: center;">
+    <!-- Repository -->
+    <div style="background: var(--bg); border: 2px solid var(--accent); border-radius: 8px; padding: 1rem; text-align: center; flex: 1; min-width: 140px;">
+      <div style="font-size: 2rem;">📁</div>
+      <div style="font-weight: 700; color: var(--text); margin-top: 0.5rem; font-size: 0.9rem;">Repository</div>
+      <div style="font-size: 0.7rem; color: var(--muted); margin-top: 0.25rem;">index.md<br>README.md</div>
+    </div>
+    
+    <!-- Arrow -->
+    <div style="font-size: 2rem; color: var(--muted);">→</div>
+    
+    <!-- Build -->
+    <div style="background: var(--bg); border: 2px solid var(--purple); border-radius: 8px; padding: 1rem; text-align: center; flex: 1; min-width: 140px;">
+      <div style="font-size: 2rem;">⚙️</div>
+      <div style="font-weight: 700; color: var(--text); margin-top: 0.5rem; font-size: 0.9rem;">Build</div>
+      <div style="font-size: 0.7rem; color: var(--muted); margin-top: 0.25rem;"><span class="de">GitHub Actions</span><span class="en">GitHub Actions</span></div>
+    </div>
+    
+    <!-- Arrow -->
+    <div style="font-size: 2rem; color: var(--muted);">→</div>
+    
+    <!-- Live Website -->
+    <div style="background: var(--bg); border: 2px solid var(--green); border-radius: 8px; padding: 1rem; text-align: center; flex: 1; min-width: 140px;">
+      <div style="font-size: 2rem;">🌐</div>
+      <div style="font-weight: 700; color: var(--text); margin-top: 0.5rem; font-size: 0.9rem;"><span class="de">Live Website</span><span class="en">Live Website</span></div>
+      <div style="font-size: 0.7rem; color: var(--muted); margin-top: 0.25rem;">username.github.io</div>
+    </div>
+  </div>
+  <figcaption style="margin-top: 1rem; font-size: 0.85rem; color: var(--muted); text-align: center;">
+    <span class="de">GitHub Pages Pipeline: Code → Build → Website — vollautomatisch bei jedem Commit.</span>
+    <span class="en">GitHub Pages pipeline: Code → Build → Website — fully automated on every commit.</span>
+  </figcaption>
+</figure>
+
+<style>
+@media (max-width: 600px) {
+  .viz-pages-pipeline > div {
+    flex-direction: column !important;
+  }
+}
+</style>
+
 <div class="step">
   <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Neues Repository erstellen</span><span class="en">Create a new repository</span></div></div>
   <ol>

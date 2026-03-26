@@ -56,6 +56,50 @@
 
 <h2><span class="de">Wo passt GitHub — und wo nicht?</span><span class="en">Where does GitHub fit — and where not?</span></h2>
 
+<figure class="viz-collaboration-network" style="max-width: 700px; margin: 2rem auto; background: var(--surface); border-radius: 12px; padding: 1.5rem; border: 1px solid var(--border);">
+  <div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+    <!-- Central Repository -->
+    <div style="background: var(--accent); width: 100px; height: 100px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(88,166,255,0.3); position: relative; z-index: 2;">
+      <div style="font-size: 2rem;">📁</div>
+      <div style="font-size: 0.75rem; font-weight: 700; color: var(--bg); margin-top: 0.25rem;">Repository</div>
+    </div>
+    
+    <!-- Collaborators around -->
+    <div style="display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; position: relative;">
+      <!-- Person 1 -->
+      <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+        <div style="position: absolute; bottom: 100%; left: 50%; width: 2px; height: 60px; background: var(--border); transform: translateX(-50%);"></div>
+        <div style="background: var(--bg); border: 2px solid var(--green); width: 70px; height: 70px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <div style="font-size: 1.5rem;">👤</div>
+        </div>
+        <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem; font-weight: 600;">Anna</div>
+      </div>
+      
+      <!-- Person 2 -->
+      <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+        <div style="position: absolute; bottom: 100%; left: 50%; width: 2px; height: 60px; background: var(--border); transform: translateX(-50%);"></div>
+        <div style="background: var(--bg); border: 2px solid var(--purple); width: 70px; height: 70px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <div style="font-size: 1.5rem;">👤</div>
+        </div>
+        <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem; font-weight: 600;">Ben</div>
+      </div>
+      
+      <!-- Person 3 -->
+      <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+        <div style="position: absolute; bottom: 100%; left: 50%; width: 2px; height: 60px; background: var(--border); transform: translateX(-50%);"></div>
+        <div style="background: var(--bg); border: 2px solid var(--orange); width: 70px; height: 70px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <div style="font-size: 1.5rem;">👤</div>
+        </div>
+        <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem; font-weight: 600;">Clara</div>
+      </div>
+    </div>
+  </div>
+  <figcaption style="margin-top: 1rem; font-size: 0.85rem; color: var(--muted); text-align: center;">
+    <span class="de">Zusammenarbeit über ein zentrales Repository — jeder arbeitet in seinem Branch, alle sehen die Änderungen.</span>
+    <span class="en">Collaboration via a central repository — everyone works in their branch, all see the changes.</span>
+  </figcaption>
+</figure>
+
 <div class="decision-grid">
   <div class="decision-card">
     <div class="decision-icon">👥</div>

@@ -36,6 +36,73 @@
 <h2><span class="de">Das Konzept</span><span class="en">The concept</span></h2>
 <p><span class="de">Ein <strong>Branch</strong> ist eine parallele Kopie deines Projekts. Du änderst dort etwas, ohne das Original zu berühren. Wenn du fertig bist, öffnest du einen <strong>Pull Request</strong> — das ist wie sagen: „Schau dir das an, bevor es übernommen wird."</span><span class="en">A <strong>branch</strong> is a parallel copy of your project. You change things there without touching the original. When done, you open a <strong>pull request</strong> — like saying: "Review this before it goes live."</span></p>
 
+<figure class="viz-pr-workflow" style="max-width: 700px; margin: 2rem auto; background: var(--surface); border-radius: 12px; padding: 1.5rem; border: 1px solid var(--border);">
+  <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+    <!-- Fork / Branch -->
+    <div style="background: var(--bg); border: 2px solid var(--orange); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 100px;">
+      <div style="font-size: 1.5rem;">🔀</div>
+      <div style="font-size: 0.8rem; font-weight: 700; color: var(--text); margin-top: 0.25rem;"><span class="de">Branch</span><span class="en">Branch</span></div>
+    </div>
+    
+    <!-- Arrow -->
+    <div style="font-size: 1.5rem; color: var(--muted);">→</div>
+    
+    <!-- Change -->
+    <div style="background: var(--bg); border: 2px solid var(--accent); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 100px;">
+      <div style="font-size: 1.5rem;">✏️</div>
+      <div style="font-size: 0.8rem; font-weight: 700; color: var(--text); margin-top: 0.25rem;"><span class="de">Änderung</span><span class="en">Change</span></div>
+    </div>
+    
+    <!-- Arrow -->
+    <div style="font-size: 1.5rem; color: var(--muted);">→</div>
+    
+    <!-- Pull Request -->
+    <div style="background: var(--bg); border: 2px solid var(--purple); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 100px;">
+      <div style="font-size: 1.5rem;">💬</div>
+      <div style="font-size: 0.8rem; font-weight: 700; color: var(--text); margin-top: 0.25rem;">Pull Request</div>
+    </div>
+    
+    <!-- Arrow -->
+    <div style="font-size: 1.5rem; color: var(--muted);">→</div>
+    
+    <!-- Review -->
+    <div style="background: var(--bg); border: 2px solid var(--orange); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 100px;">
+      <div style="font-size: 1.5rem;">👀</div>
+      <div style="font-size: 0.8rem; font-weight: 700; color: var(--text); margin-top: 0.25rem;">Review</div>
+    </div>
+    
+    <!-- Arrow with options -->
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+      <div style="font-size: 1.5rem; color: var(--muted);">↓</div>
+    </div>
+    
+    <!-- Merge or Feedback -->
+    <div style="display: flex; gap: 1rem; width: 100%; justify-content: center; flex-wrap: wrap;">
+      <div style="background: var(--bg); border: 2px solid var(--green); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 100px;">
+        <div style="font-size: 1.5rem;">✅</div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: var(--text); margin-top: 0.25rem;">Merge</div>
+      </div>
+      <div style="color: var(--muted); font-size: 0.9rem; align-self: center;"><span class="de">oder</span><span class="en">or</span></div>
+      <div style="background: var(--bg); border: 2px solid var(--orange); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 100px;">
+        <div style="font-size: 1.5rem;">🔄</div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: var(--text); margin-top: 0.25rem;">Feedback</div>
+      </div>
+    </div>
+  </div>
+  <figcaption style="margin-top: 1rem; font-size: 0.85rem; color: var(--muted); text-align: center;">
+    <span class="de">Pull Request Workflow: Strukturiertes Feedback bevor Änderungen übernommen werden.</span>
+    <span class="en">Pull request workflow: structured feedback before changes go live.</span>
+  </figcaption>
+</figure>
+
+<style>
+@media (max-width: 600px) {
+  .viz-pr-workflow > div {
+    flex-direction: column !important;
+  }
+}
+</style>
+
 <div class="step">
   <div class="step-header"><div class="step-num">1</div><div class="step-title"><span class="de">Einen Branch erstellen</span><span class="en">Create a branch</span></div></div>
   <ol>
